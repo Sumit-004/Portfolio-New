@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="icon" href="./images/S-favicon.png">
     <link rel="stylesheet" href="./src/output.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,21 +18,9 @@
         integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
     <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
 
     <style>
-        body {
-            font-family: "Space Grotesk", sans-serif;
-        }
-
-        .heading-text {
-            font-family: "Permanent Marker", cursive;
-        }
-
-        .jetBrain {
-            font-family: "JetBrains Mono", monospace;
-        }
-
-
         #cursor {
             animation: blink 0.7s infinite;
         }
@@ -126,76 +115,78 @@
     </style>
 </head>
 
-<body class="bg-[#2D0000] text-white ">
+<body class="">
     <div class="homepage">
+
+        <!-- Navbar -->
 
         <header class="sticky top-0 z-50 jetBrain border-b border-[#542b2b] bg-[#2D0000]/90 backdrop-blur-md">
             <nav class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-8 lg:px-12 lg:py-5">
 
                 <!-- Logo -->
-                <a href="#home"
-                    class="heading-text flex shrink-0 items-center gap-2 text-xl font-bold text-[#F9E6A8] sm:gap-4 sm:text-2xl md:text-3xl">
+                <a href="./index.html"
+                    class="heading-text flex shrink-0 items-center gap-2 text-xl font-bold cream sm:gap-4 sm:text-2xl md:text-3xl">
                     <i class="fa-solid fa-laptop-code"></i>Sumit
                 </a>
 
-                <ul class="hidden items-center gap-6 text-sm text-[#F9E6A8] md:flex lg:gap-12 lg:text-base">
+                <ul class="hidden items-center gap-6 text-sm cream md:flex lg:gap-12 lg:text-base">
                     <li>
-                        <a href="#home" class="group relative inline-block py-1">
+                        <a href="./index.html" class="relative py-1">
                             Home
                             <span
-                                class="absolute -bottom-0.5 left-0 h-0.5 w-full origin-right scale-x-0 bg-[#F9E6A8] transition-transform duration-300 ease-out group-hover:origin-left group-hover:scale-x-100"></span>
+                                class="absolute -bottom-0.5 left-0 h-0.5 w-full bg-cream"></span>
                         </a>
                     </li>
                     <li>
-                        <a href="#about" class="group relative inline-block py-1">
+                        <a href="./about.html" class="group relative inline-block py-1">
                             About
                             <span
-                                class="absolute -bottom-0.5 left-0 h-0.5 w-full origin-right scale-x-0 bg-[#F9E6A8] transition-transform duration-300 ease-out group-hover:origin-left group-hover:scale-x-100"></span>
+                                class="absolute -bottom-0.5 left-0 h-0.5 w-full origin-right scale-x-0 bg-cream transition-transform duration-300 ease-out group-hover:origin-left group-hover:scale-x-100"></span>
                         </a>
                     </li>
                     <li>
-                        <a href="#projects" class="group relative inline-block py-1">
+                        <a href="./projects.html" class="group relative inline-block py-1">
                             Projects
                             <span
-                                class="absolute -bottom-0.5 left-0 h-0.5 w-full origin-right scale-x-0 bg-[#F9E6A8] transition-transform duration-300 ease-out group-hover:origin-left group-hover:scale-x-100"></span>
+                                class="absolute -bottom-0.5 left-0 h-0.5 w-full origin-right scale-x-0 bg-cream transition-transform duration-300 ease-out group-hover:origin-left group-hover:scale-x-100"></span>
                         </a>
                     </li>
                     <li>
-                        <a href="#skills" class="group relative inline-block py-1">
+                        <a href="./skills.html" class="group relative inline-block py-1">
                             Skills
                             <span
-                                class="absolute -bottom-0.5 left-0 h-0.5 w-full origin-right scale-x-0 bg-[#F9E6A8] transition-transform duration-300 ease-out group-hover:origin-left group-hover:scale-x-100"></span>
+                                class="absolute -bottom-0.5 left-0 h-0.5 w-full origin-right scale-x-0 bg-cream transition-transform duration-300 ease-out group-hover:origin-left group-hover:scale-x-100"></span>
                         </a>
                     </li>
                     <li>
-                        <a href="#contact" class="group relative inline-block py-1">
+                        <a href="./contact.html" class="group relative inline-block py-1">
                             Contact
                             <span
-                                class="absolute -bottom-0.5 left-0 h-0.5 w-full origin-right scale-x-0 bg-[#F9E6A8] transition-transform duration-300 ease-out group-hover:origin-left group-hover:scale-x-100"></span>
+                                class="absolute -bottom-0.5 left-0 h-0.5 w-full origin-right scale-x-0 bg-cream transition-transform duration-300 ease-out group-hover:origin-left group-hover:scale-x-100"></span>
                         </a>
                     </li>
                 </ul>
 
                 <div class="flex items-center gap-2 sm:gap-4">
-                    <a href="#contact"
-                        class="hidden h-10 items-center whitespace-nowrap border bg-[#F9E6A8] px-4 text-sm text-[#542b2b] transition hover:opacity-90 md:inline-flex lg:text-base">
+                    <a href="./contact.html"
+                        class="hidden h-10 items-center whitespace-nowrap border bg-cream rounded-lg px-4 text-sm text-[#542b2b] transition hover:opacity-90 md:inline-flex lg:text-base">
                         Let's Connect
                     </a>
 
                     <button
-                        class="flex size-9 cursor-pointer items-center justify-center rounded-lg border text-[#F9E6A8] backdrop-blur-md transition-all duration-300 hover:bg-[#F9E6A8] hover:text-[#542b2b] md:size-10">
+                        class="flex size-9 cursor-pointer items-center justify-center rounded-lg border cream backdrop-blur-md transition-all duration-300 hover:bg-cream hover:text-[#542b2b] md:size-10">
                         <i class="fa-regular fa-sun"></i>
                     </button>
 
                     <a href=""
-                        class="flex size-9 cursor-pointer items-center justify-center rounded-lg border bg-[#F9E6A8] text-[#542b2b] backdrop-blur-md transition hover:opacity-90 md:size-10">
+                        class="flex size-9 cursor-pointer items-center justify-center rounded-lg border bg-cream text-[#542b2b] backdrop-blur-md transition hover:opacity-90 md:size-10">
                         <i class="fa-solid fa-download"></i>
                     </a>
 
                     <!-- Hamburger -->
                     <button id="menu-btn" type="button" aria-label="Open menu" aria-expanded="false"
                         aria-controls="mobile-menu"
-                        class="flex size-9 cursor-pointer items-center justify-center rounded-lg border bg-white/10 text-[#F9E6A8] backdrop-blur-md md:hidden">
+                        class="flex size-9 cursor-pointer items-center justify-center rounded-lg border bg-white/10 cream backdrop-blur-md md:hidden">
                         <i id="menu-icon" class="fa-solid fa-bars"></i>
                     </button>
                 </div>
@@ -205,14 +196,14 @@
             <div id="mobile-menu"
                 class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out md:hidden">
                 <div class="overflow-hidden">
-                    <ul class="flex flex-col px-4 pb-4 text-[#F9E6A8] sm:px-8">
-                        <li><a href="#home" class="block border-t border-[#542b2b] py-3">Home</a></li>
-                        <li><a href="#about" class="block border-t border-[#542b2b] py-3">About</a></li>
-                        <li><a href="#projects" class="block border-t border-[#542b2b] py-3">Projects</a></li>
-                        <li><a href="#skills" class="block border-t border-[#542b2b] py-3">Skills</a></li>
-                        <li><a href="#contact" class="block border-t border-[#542b2b] py-3">Contact</a></li>
+                    <ul class="flex flex-col px-4 pb-4 cream sm:px-8">
+                        <li><a href="./index.html" class="block border-t border-[#542b2b] py-3">Home</a></li>
+                        <li><a href="./about.html" class="block border-t border-[#542b2b] py-3">About</a></li>
+                        <li><a href="./projects.html" class="block border-t border-[#542b2b] py-3">Projects</a></li>
+                        <li><a href="./skills.html" class="block border-t border-[#542b2b] py-3">Skills</a></li>
+                        <li><a href="./contact.html" class="block border-t border-[#542b2b] py-3">Contact</a></li>
                         <li class="pt-3">
-                            <a href="#contact" class="block border bg-[#F9E6A8] py-3 text-center text-[#542b2b]">Let's
+                            <a href="./contact.html" class="block border bg-cream py-3 text-center text-[#542b2b]">Let's
                                 Connect</a>
                         </li>
                     </ul>
@@ -224,35 +215,25 @@
         <!-- HeroSection -->
 
         <section
-            class="relative px-8 md:px-30 lg:px-46 py-4 md:mt-10 flex flex-col lg:flex-row justify-between overflow-hidden">
+            class="relative px-8 md:px-30 lg:px-46 py-4 md:my-10 flex flex-col lg:flex-row justify-between overflow-hidden">
             <h1
-                class="absolute -z-10 left-4 lg:left-1/5 top-[220px] lg:bottom-[86px] opacity-10 text-[70px] lg:text-[150px] font-extrabold text-transparent [-webkit-text-stroke:2px_#F9E6A8]">
+                class="absolute -z-20 left-4 lg:left-1/5 top-55 lg:bottom-21.5 opacity-10 text-[70px] lg:text-[150px] font-extrabold text-transparent [-webkit-text-stroke:2px_#F9E6A8]">
                 PORTFOLIO</h1>
             <h1
-                class="absolute -z-10 right-2 lg:right-20 bottom-[360px] lg:-bottom-14 opacity-20 text-[70px] lg:text-[150px] font-extrabold text-[#F9E6A8]">
+                class="absolute -z-20 right-2 lg:right-20 bottom-90 lg:-bottom-14 opacity-20 text-[70px] lg:text-[150px] font-extrabold cream">
                 PORTFOLIO</h1>
 
             <!-- Left HeroSection -->
 
             <div class="left-heroSection w-full lg:w-1/2 pr-8">
-                <!-- <h2
-                    class="inline-flex items-center gap-2 px-4 py-1 my-5 text-sm font-semibold text-green-200 bg-green-800 rounded-full shadow-lg animate-pulse hover:animate-none hover:scale-105 transition-transform duration-300 cursor-pointer">
-                    <span class="relative flex h-3 w-3">
-                        <span
-                            class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-300 opacity-75"></span>
-                        <span class="relative inline-flex rounded-full h-3 w-3 bg-green-400"></span>
-                    </span>
-                    Available For Hire
-                </h2> -->
 
-
-                <div class="flex justify-between items-center text-[10px] md:text-sm jetBrain text-[#F9E6A8]">
+                <div class="flex justify-between items-center text-[10px] md:text-sm jetBrain cream">
                     <span class="border border-[#542b2b] bg-[#411b1b] px-3 py-1.5">FULL STACK DEVELOPER</span>
-                    <span class="">SYSTEM_READY: TRUE</span>
+                    <span class="font-mono tracking-[0.3em]">// SYSTEM_READY: TRUE</span>
                 </div>
 
 
-                <h1 class="text-4xl lg:text-6xl font-bold mt-5 text-[#F9E6A8] heading-text">Hi, I am Sumit</h1>
+                <h1 class="text-4xl lg:text-6xl font-bold mt-5 text-red-700 heading-text">Hi, I am Sumit</h1>
 
                 <h1 class="text-xl md:text-3xl mt-6">I am <span id="text" class="text-blue-500"></span><span
                         id="cursor">|</span></h1>
@@ -266,11 +247,11 @@
 
                 <div class="flex gap-4 my-7">
                     <button
-                        class="h-10 px-4 text-[#542b2b] group bg-[#F9E6A8] cursor-pointer hover:bg-[#f8eecd] flex items-center gap-1 transition-colors duration-300">View
+                        class="py-2 px-4 rounded-xl group bg-red-700 cursor-pointer hover:bg-red-800 flex items-center gap-1 transition-colors duration-300">View
                         Projects<i
                             class="fa-solid fa-arrow-up-right-from-square group-hover:-translate-y-1 group-hover:translate-x-1 transition-all duration-500 ease-in-out"></i></button>
                     <button
-                        class="border h-10 px-4 text-[#F9E6A8] cursor-pointer hover:bg-[#F9E6A8] hover:text-[#542b2b] transition-colors duration-300">GitHub
+                        class="px-6 py-3 rounded-xl border border-[#542b2b] font-semibold hover:border-2 hover:border-red-700 transition cursor-pointer">GitHub
                         Profile</button>
 
                 </div>
@@ -278,7 +259,7 @@
 
                 <!-- Connect Fixed -->
                 <div
-                    class="hidden md:flex flex-col border border-[#502626] py-4 w-20 justify-center items-center gap-3 mt-8 fixed top-1/4 left-0">
+                    class="hidden md:flex flex-col border border-[#502626] py-4 md:w-16 lg:w-20 justify-center items-center gap-3 mt-8 fixed top-1/4 left-0">
                     <span
                         class="size-10 rounded-full border border-[#542b2b] flex items-center justify-center text-lg cursor-pointer hover:bg-white hover:text-red-500 transition-all duration-500"><i
                             class="fa-brands fa-instagram"></i></span>
@@ -292,8 +273,8 @@
                         class="size-10 rounded-full border border-[#542b2b] flex items-center justify-center text-lg cursor-pointer hover:bg-white hover:text-black transition-all duration-500"><i
                             class="fa-brands fa-github"></i></span>
 
-                    <span class="w-[2px] h-12 bg-[#542b2b]"></span>
-                    <span class="-rotate-90 my-6 text-[#F9E6A8]">Connect</span>
+                    <span class="w-0.5 h-12 bg-[#542b2b]"></span>
+                    <span class="-rotate-90 my-6 cream tracking-widest">Connect</span>
                 </div>
 
             </div>
@@ -343,31 +324,194 @@
         </section>
 
 
+        <!-- About Section -->
+        <section id="about" class="mx-6 md:mx-24 lg:mx-36 py-16 border-t border-[#542b2b] scroll-mt-20">
+            <div class="grid md:grid-cols-2 gap-8 items-center">
 
-        <!-- <section class="mx-auto max-w-4xl px-6 py-20 text-center">
-            <h2 class="mb-10 text-3xl font-bold text-white">My Superpowers</h2>
-            <div id="flip-grid" class="grid gap-8 sm:grid-cols-3"></div>
-        </section> -->
+                <!-- Left -->
+                <div>
+                    <p class="text-xs tracking-[0.3em] text-red-700 font-mono mb-2">// ABOUT_ME</p>
+                    <h2 class="text-4xl font-bold">About Me</h2>
+                    <div class="mt-4 mb-6 h-1 w-16 rounded-full bg-red-700"></div>
+
+                    <p class="text-gray-300 leading-relaxed mb-6">
+                        I'm the developer who turns ideas into web experiences people enjoy using.
+                        I build applications that look great, load fast, and work for everyone.
+                    </p>
+
+                    <a href="./about.html"
+                        class="group inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-red-700 font-semibold hover:bg-red-800 transition">
+                        More About Me
+                        <i
+                            class="fa-solid fa-arrow-right transition-transform duration-300 group-hover:translate-x-1"></i>
+                    </a>
+                </div>
+
+                <!-- Right -->
+                <div class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-1 lg:grid-cols-3 gap-4">
+                    <div
+                        class="flex flex-col items-center justify-center gap-2 text-center bg-black/20 border border-[#542b2b] rounded-2xl p-5 transition-all duration-300 hover:border-red-700 hover:-translate-y-1">
+                        <i class="fa-solid fa-code text-red-700 text-2xl"></i>
+                        <p class="text-xs tracking-widest font-semibold">FULL STACK<br>DEVELOPER</p>
+                    </div>
+                    <div class="flex flex-col items-center justify-center gap-2 text-center bg-black/20
+                  border border-[#542b2b] rounded-2xl p-5 transition-all duration-300
+                  hover:border-red-700 hover:-translate-y-1">
+                        <i class="fa-solid fa-location-dot text-red-700 text-2xl"></i>
+                        <p class="text-xs tracking-widest font-semibold">FARIDABAD,<br>INDIA</p>
+                    </div>
+                    <div class="flex flex-col items-center justify-center gap-2 text-center bg-black/20
+                  border border-[#542b2b] rounded-2xl p-5 transition-all duration-300
+                  hover:border-red-700 hover:-translate-y-1">
+                        <span class="relative flex h-3 w-3 shrink-0 my-2">
+                            <span
+                                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-300 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-3 w-3 bg-red-600"></span>
+                        </span>
+                        <p class="text-xs tracking-widest font-semibold">AVAILABLE<br>FOR HIRE</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
 
 
-        <section class="mt-20 text-center mx-6 lg:mx-36 py-8 border-t border-[#542b2b]">
-            <p class="text-sm lg:text-xl">I'm the developer who turns ideas into web experiences people enjoy using. My
-                mission is
-                to build applications that look great, load fast, and work for everyone.</p>
-            <button class="h-10 px-4 text-[#542b2b] bg-[#F9E6A8] cursor-pointer my-5">About Me</button>
+        <!-- Skills -->
+        <section id="skills" class="mx-6 md:mx-24 lg:mx-36 py-16 border-t border-[#542b2b]">
+            <!-- Heading -->
+            <div class="mb-10">
+                <p class="text-xs tracking-[0.3em] text-red-700 font-mono mb-2">// TECH_STACK</p>
+                <h1 class="text-4xl font-bold">Skills</h1>
+                <div class="mt-4 h-1 w-16 rounded-full bg-red-700"></div>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-8">
+
+                <div class="group flex flex-col items-center justify-center gap-3 aspect-square
+                bg-black/20 border border-[#542b2b] rounded-2xl p-4
+                transition-all duration-300 hover:-translate-y-1.5
+                hover:border-red-700 hover:bg-black/40 hover:shadow-lg hover:shadow-red-900/30">
+                    <div class="size-14 flex items-center justify-center">
+                        <i
+                            class="fa-brands fa-html5 text-5xl text-red-700 transition-transform duration-300 group-hover:scale-110"></i>
+                    </div>
+                    <span class="text-xs sm:text-sm font-semibold tracking-widest text-center">HTML</span>
+                </div>
+
+                <div class="group flex flex-col items-center justify-center gap-3 aspect-square
+                bg-black/20 border border-[#542b2b] rounded-2xl p-4
+                transition-all duration-300 hover:-translate-y-1.5
+                hover:border-red-700 hover:bg-black/40 hover:shadow-lg hover:shadow-red-900/30">
+                    <div class="size-14 flex items-center justify-center">
+                        <i
+                            class="fa-brands fa-css3 text-5xl text-blue-600 transition-transform duration-300 group-hover:scale-110"></i>
+                    </div>
+                    <span class="text-xs sm:text-sm font-semibold tracking-widest text-center">CSS</span>
+                </div>
+
+                <div class="group flex flex-col items-center justify-center gap-3 aspect-square
+                bg-black/20 border border-[#542b2b] rounded-2xl p-4
+                transition-all duration-300 hover:-translate-y-1.5
+                hover:border-red-700 hover:bg-black/40 hover:shadow-lg hover:shadow-red-900/30">
+                    <div class="size-14 flex items-center justify-center">
+                        <i
+                            class="fa-brands fa-square-js text-5xl text-yellow-500 transition-transform duration-300 group-hover:scale-110"></i>
+                    </div>
+                    <span class="text-xs sm:text-sm font-semibold tracking-widest text-center">JAVASCRIPT</span>
+                </div>
+
+                <div class="group flex flex-col items-center justify-center gap-3 aspect-square
+                bg-black/20 border border-[#542b2b] rounded-2xl p-4
+                transition-all duration-300 hover:-translate-y-1.5
+                hover:border-red-700 hover:bg-black/40 hover:shadow-lg hover:shadow-red-900/30">
+                    <div class="size-14 flex items-center justify-center">
+                        <i
+                            class="fa-brands fa-react text-5xl text-sky-600 transition-transform duration-300 group-hover:scale-110"></i>
+                    </div>
+                    <span class="text-xs sm:text-sm font-semibold tracking-widest text-center">REACT</span>
+                </div>
+
+                <div class="group flex flex-col items-center justify-center gap-3 aspect-square
+                bg-black/20 border border-[#542b2b] rounded-2xl p-4
+                transition-all duration-300 hover:-translate-y-1.5
+                hover:border-red-700 hover:bg-black/40 hover:shadow-lg hover:shadow-red-900/30">
+                    <div class="size-14 flex items-center justify-center">
+                        <i
+                            class="fa-brands fa-node text-5xl text-green-500 transition-transform duration-300 group-hover:scale-110"></i>
+                    </div>
+                    <span class="text-xs sm:text-sm font-semibold tracking-widest text-center">NODE.JS</span>
+                </div>
+
+                <div class="group flex flex-col items-center justify-center gap-3 aspect-square
+                bg-black/20 border border-[#542b2b] rounded-2xl p-4
+                transition-all duration-300 hover:-translate-y-1.5
+                hover:border-red-700 hover:bg-black/40 hover:shadow-lg hover:shadow-red-900/30">
+                    <div class="size-14 flex items-center justify-center">
+                        <img src="./images/express-svgrepo-com.svg" alt="Express.js"
+                            class="size-12 object-contain invert transition-transform duration-300 group-hover:scale-110">
+                    </div>
+                    <span class="text-xs sm:text-sm font-semibold tracking-widest text-center">EXPRESS.JS</span>
+                </div>
+
+                <div class="group flex flex-col items-center justify-center gap-3 aspect-square
+                bg-black/20 border border-[#542b2b] rounded-2xl p-4
+                transition-all duration-300 hover:-translate-y-1.5
+                hover:border-red-700 hover:bg-black/40 hover:shadow-lg hover:shadow-red-900/30">
+                    <div class="size-14 flex items-center justify-center">
+                        <img src="./images/nextjs-icon-svgrepo-com.svg" alt="Next.js"
+                            class="size-12 object-contain invert transition-transform duration-300 group-hover:scale-110">
+                    </div>
+                    <span class="text-xs sm:text-sm font-semibold tracking-widest text-center">NEXT.JS</span>
+                </div>
+
+                <div class="group flex flex-col items-center justify-center gap-3 aspect-square
+                bg-black/20 border border-[#542b2b] rounded-2xl p-4
+                transition-all duration-300 hover:-translate-y-1.5
+                hover:border-red-700 hover:bg-black/40 hover:shadow-lg hover:shadow-red-900/30">
+                    <div class="size-14 flex items-center justify-center">
+                        <img src="./images/postman-icon-svgrepo-com.svg" alt="Postman"
+                            class="size-12 object-contain transition-transform duration-300 group-hover:scale-110">
+                    </div>
+                    <span class="text-xs sm:text-sm font-semibold tracking-widest text-center">POSTMAN</span>
+                </div>
+
+                <div class="group flex flex-col items-center justify-center gap-3 aspect-square
+                bg-black/20 border border-[#542b2b] rounded-2xl p-4
+                transition-all duration-300 hover:-translate-y-1.5
+                hover:border-red-700 hover:bg-black/40 hover:shadow-lg hover:shadow-red-900/30">
+                    <div class="size-14 flex items-center justify-center">
+                        <img src="./images/redux-svgrepo-com.svg" alt="Redux"
+                            class="size-12 object-contain transition-transform duration-300 group-hover:scale-110">
+                    </div>
+                    <span class="text-xs sm:text-sm font-semibold tracking-widest text-center">REDUX</span>
+                </div>
+
+                <div class="group flex flex-col items-center justify-center gap-3 aspect-square
+                bg-black/20 border border-[#542b2b] rounded-2xl p-4
+                transition-all duration-300 hover:-translate-y-1.5
+                hover:border-red-700 hover:bg-black/40 hover:shadow-lg hover:shadow-red-900/30">
+                    <div class="size-14 flex items-center justify-center">
+                        <img src="./images/tailwindcss-icon-svgrepo-com.svg" alt="Tailwind CSS"
+                            class="size-12 object-contain transition-transform duration-300 group-hover:scale-110">
+                    </div>
+                    <span class="text-xs sm:text-sm font-semibold tracking-widest text-center">TAILWIND CSS</span>
+                </div>
+
+            </div>
         </section>
 
 
 
+        <!-- Footer -->
 
-        <footer class="px-4 sm:px-8 md:px-12 lg:px-20 xl:px-30 mt-10 text-[#F9E6A8]">
+        <footer class="px-4 sm:px-8 md:px-20 lg:px-20 xl:px-30 mt-10 cream">
             <div
                 class="px-6 sm:px-8 md:px-10 lg:px-14 py-8 sm:py-10 mb-8 sm:mb-12 border border-[#542b2b] bg-[#4a1616]/50 backdrop-blur-md rounded-[30px] sm:rounded-[40px] flex flex-col lg:flex-row justify-between gap-8 lg:gap-0">
 
                 <div class="w-full lg:w-[40%] flex flex-col justify-center items-start">
                     <p class="text-base sm:text-lg"> Designing systems that prioritize human intuition. Architecting
                         digital experiences with precision and intent. </p>
-                    <button class="h-12 px-4 text-[#542b2b] bg-[#F9E6A8] rounded-2xl cursor-pointer my-5"> START A
+                    <button class="h-12 px-4 text-[#542b2b] bg-cream rounded-2xl cursor-pointer my-5"> START A
                         PROJECT <i class="fa-regular fa-envelope"></i>
                     </button>
                 </div>

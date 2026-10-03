@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" href="./images/S-favicon.png">
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+    <header class="sticky top-0 z-50 jetBrain border-b border-[#542b2b] bg-[#2D0000]/90 backdrop-blur-md">
+        <nav class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-8 lg:px-12 lg:py-5">
+
+            <!-- Logo -->
+            <a href="#home"
+                class="heading-text flex shrink-0 items-center gap-2 text-xl font-bold cream sm:gap-4 sm:text-2xl md:text-3xl">
+                <i class="fa-solid fa-laptop-code"></i>Sumit
+            </a>
+
+            <ul class="hidden items-center gap-6 text-sm cream md:flex lg:gap-12 lg:text-base">
+                <li>
+                    <a href="#home" class="group relative inline-block py-1">
+                        Home
+                        <span
+                            class="absolute -bottom-0.5 left-0 h-0.5 w-full origin-right scale-x-0 bg-cream transition-transform duration-300 ease-out group-hover:origin-left group-hover:scale-x-100"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./about.html" class="group relative inline-block py-1">
+                        About
+                        <span
+                            class="absolute -bottom-0.5 left-0 h-0.5 w-full origin-right scale-x-0 bg-cream transition-transform duration-300 ease-out group-hover:origin-left group-hover:scale-x-100"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#projects" class="group relative inline-block py-1">
+                        Projects
+                        <span
+                            class="absolute -bottom-0.5 left-0 h-0.5 w-full origin-right scale-x-0 bg-cream transition-transform duration-300 ease-out group-hover:origin-left group-hover:scale-x-100"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#skills" class="group relative inline-block py-1">
+                        Skills
+                        <span
+                            class="absolute -bottom-0.5 left-0 h-0.5 w-full origin-right scale-x-0 bg-cream transition-transform duration-300 ease-out group-hover:origin-left group-hover:scale-x-100"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact" class="group relative inline-block py-1">
+                        Contact
+                        <span
+                            class="absolute -bottom-0.5 left-0 h-0.5 w-full origin-right scale-x-0 bg-cream transition-transform duration-300 ease-out group-hover:origin-left group-hover:scale-x-100"></span>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="flex items-center gap-2 sm:gap-4">
+                <a href="#contact"
+                    class="hidden h-10 items-center whitespace-nowrap border bg-cream px-4 text-sm text-[#542b2b] transition hover:opacity-90 md:inline-flex lg:text-base">
+                    Let's Connect
+                </a>
+
+                <button
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-lg border cream backdrop-blur-md transition-all duration-300 hover:bg-cream hover:text-[#542b2b] md:size-10">
+                    <i class="fa-regular fa-sun"></i>
+                </button>
+
+                <a href=""
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-lg border bg-cream text-[#542b2b] backdrop-blur-md transition hover:opacity-90 md:size-10">
+                    <i class="fa-solid fa-download"></i>
+                </a>
+
+                <!-- Hamburger -->
+                <button id="menu-btn" type="button" aria-label="Open menu" aria-expanded="false"
+                    aria-controls="mobile-menu"
+                    class="flex size-9 cursor-pointer items-center justify-center rounded-lg border bg-white/10 cream backdrop-blur-md md:hidden">
+                    <i id="menu-icon" class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile menu -->
+        <div id="mobile-menu"
+            class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out md:hidden">
+            <div class="overflow-hidden">
+                <ul class="flex flex-col px-4 pb-4 cream sm:px-8">
+                    <li><a href="#home" class="block border-t border-[#542b2b] py-3">Home</a></li>
+                    <li><a href="#about" class="block border-t border-[#542b2b] py-3">About</a></li>
+                    <li><a href="#projects" class="block border-t border-[#542b2b] py-3">Projects</a></li>
+                    <li><a href="#skills" class="block border-t border-[#542b2b] py-3">Skills</a></li>
+                    <li><a href="#contact" class="block border-t border-[#542b2b] py-3">Contact</a></li>
+                    <li class="pt-3">
+                        <a href="#contact" class="block border bg-cream py-3 text-center text-[#542b2b]">Let's
+                            Connect</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!-- <section class="mx-auto max-w-4xl px-6 py-20 text-center">
+            <h2 class="mb-10 text-3xl font-bold text-white">My Superpowers</h2>
+            <div id="flip-grid" class="grid gap-8 sm:grid-cols-3"></div>
+        </section> -->
+
+
+
+
+
+    <!-- Footer -->
+
+    <footer class="px-4 sm:px-8 md:px-12 lg:px-20 xl:px-30 mt-10 cream">
+        <div
+            class="px-6 sm:px-8 md:px-10 lg:px-14 py-8 sm:py-10 mb-8 sm:mb-12 border border-[#542b2b] bg-[#4a1616]/50 backdrop-blur-md rounded-[30px] sm:rounded-[40px] flex flex-col lg:flex-row justify-between gap-8 lg:gap-0">
+
+            <div class="w-full lg:w-[40%] flex flex-col justify-center items-start">
+                <p class="text-base sm:text-lg"> Designing systems that prioritize human intuition. Architecting
+                    digital experiences with precision and intent. </p>
+                <button class="h-12 px-4 text-[#542b2b] bg-cream rounded-2xl cursor-pointer my-5"> START A
+                    PROJECT <i class="fa-regular fa-envelope"></i>
+                </button>
+            </div>
+
+            <div class="grid grid-cols-2 px-0 sm:px-5 w-full lg:w-[40%] gap-8 sm:gap-0">
+                <div>
+                    <label class="text-sm text-gray-200">SITEMAP</label>
+                    <ul class="text-lg sm:text-xl font-semibold flex flex-col gap-2 mt-1">
+                        <li>WORK</li>
+                        <li>ABOUT</li>
+                        <li>BLOGS</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <label class="text-sm text-gray-200">CONNECT</label>
+                    <ul class="text-lg sm:text-xl font-semibold flex flex-col gap-2 mt-1">
+                        <li
+                            class="flex justify-between items-center hover:text-sky-400 transition-colors duration-300 cursor-pointer">
+                            LINKEDIN <i class="fa-solid fa-arrow-right text-sm -rotate-45"></i> </li>
+                        <li
+                            class="flex justify-between items-center hover:text-black transition-colors duration-300 cursor-pointer">
+                            GITHUB <i class="fa-solid fa-arrow-right text-sm -rotate-45"></i> </li>
+                        <li
+                            class="flex justify-between items-center hover:text-red-500 transition-colors duration-300 cursor-pointer">
+                            INSTAGRAM <i class="fa-solid fa-arrow-right text-sm -rotate-45"></i> </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="w-full lg:w-[20%] pl-0 lg:pl-6">
+                <label class="text-sm text-gray-200">STATUS</label>
+                <div class="px-5 sm:px-8 py-6 sm:py-7 border border-[#542b2b] rounded-3xl">
+                    <div class="flex gap-5 sm:gap-8 items-center">
+                        <span class="relative flex h-3 w-3 shrink-0">
+                            <span
+                                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-300 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-3 w-3 bg-green-400"></span>
+                        </span>
+                        <div>
+                            <h2 class="text-sm font-bold"> AVAILABLE FOR HIRE </h2>
+                            <p class="text-[10px] text-[#faf5e1]"> FARIDABAD, IN — 2026 </p>
+                        </div>
+                    </div>
+                    <p class="text-xs mt-3 uppercase"> Full-Stack Developer building modern, responsive and
+                        user-friendly websites. </p>
+                </div>
+            </div>
+        </div>
+
+        <div
+            class="py-8 sm:py-12 border-t border-[#542b2b] flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6">
+            <div>
+                <p class="text-sm sm:text-base font-semibold"> CRAFTED BY SUMIT © 2026 </p>
+                <p class="text-sm"> Made with ❤️ </p>
+            </div>
+            <div class="flex gap-6 sm:gap-8 text-2xl">
+                <i class="fa-brands fa-github hover:scale-107 transition-transform ease-in-out cursor-pointer"></i>
+                <i class="fa-brands fa-linkedin-in hover:scale-107 transition-transform ease-in-out cursor-pointer"></i>
+                <i class="fa-brands fa-x-twitter hover:scale-107 transition-transform ease-in-out cursor-pointer"></i>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

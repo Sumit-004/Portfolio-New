@@ -1,0 +1,21 @@
+body {
+    font-family: "Space Grotesk", sans-serif;
+    color: white;
+    background-color: #2D0000;
+}
+
+.cream {
+    color: #F9E6A8;
+}
+
+.bg-cream {
+    background-color: #F9E6A8;
+}
+
+.heading-text {
+    font-family: "Permanent Marker", cursive;
+}
+
+.jetBrain {
+    font-family: "JetBrains Mono", monospace;
+}
