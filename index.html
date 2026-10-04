@@ -21,6 +21,19 @@
     <link rel="stylesheet" href="./style.css">
 
     <style>
+        /* #site {
+            display: none;
+        } */
+
+        /* .main-loader {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        } */
+
+        /* Running Text */
+
         #cursor {
             animation: blink 0.7s infinite;
         }
@@ -37,7 +50,9 @@
             color: transparent;
         }
 
+        /* ----------- */
 
+        /* Right Side Photo Frame */
         .spin-ring {
             background: conic-gradient(from 0deg, #6366f1, #ec4899, #f59e0b, #6366f1);
             animation: spin 6s linear infinite;
@@ -59,10 +74,9 @@
             }
         }
 
+        /* ---------- */
 
-
-
-
+        /* Calender Type Flip */
         .tile {
             position: relative;
             height: 140px;
@@ -116,7 +130,16 @@
 </head>
 
 <body class="">
-    <div class="homepage">
+
+    <!-- <div class="main-loader">
+        <div class="loader flex flex-col gap-5 items-center">
+            <div class="glitch" data-glitch="Loading...">Loading...</div>
+            <h1 class="font-bold text-2xl cream" id="loadCount">0%</h1>
+        </div>
+    </div> -->
+
+
+    <div id="site">
 
         <!-- Navbar -->
 
@@ -133,8 +156,7 @@
                     <li>
                         <a href="./index.html" class="relative py-1">
                             Home
-                            <span
-                                class="absolute -bottom-0.5 left-0 h-0.5 w-full bg-cream"></span>
+                            <span class="absolute -bottom-0.5 left-0 h-0.5 w-full bg-cream"></span>
                         </a>
                     </li>
                     <li>
@@ -325,7 +347,7 @@
 
 
         <!-- About Section -->
-        <section id="about" class="mx-6 md:mx-24 lg:mx-36 py-16 border-t border-[#542b2b] scroll-mt-20">
+        <section id="about" class="mx-6 md:mx-24 lg:mx-36 py-16 border-t border-[#542b2b]">
             <div class="grid md:grid-cols-2 gap-8 items-center">
 
                 <!-- Left -->
@@ -501,9 +523,226 @@
         </section>
 
 
+        <!-- Projects -->
+        <section id="projects" class="mx-6 md:mx-24 lg:mx-36 py-16 border-t border-[#542b2b]">
+            <!-- Heading -->
+            <div class="mb-10">
+                <p class="text-xs tracking-[0.3em] text-red-700 font-mono mb-2">// MY_WORK</p>
+                <h1 class="text-4xl font-bold">Projects</h1>
+                <div class="mt-4 h-1 w-16 rounded-full bg-red-700"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+
+                <!-- Card 1 -->
+                <div class="group flex flex-col bg-black/20 border border-[#542b2b] rounded-2xl overflow-hidden
+                    transition-all duration-300 hover:-translate-y-1.5 hover:border-red-700
+                    hover:bg-black/40 hover:shadow-lg hover:shadow-red-900/30">
+                    <div class="overflow-hidden border-b border-[#542b2b]">
+                        <img src="./images/rockpaperscissor.jpeg" alt="Rock, Paper, Scissors game"
+                            class="size-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    </div>
+                    <div class="flex flex-col flex-1 p-5">
+                        <h2 class="text-lg font-bold mb-2">Rock, Paper, Scissors</h2>
+                        <p class="text-sm text-gray-400 mb-4">
+                            A sleek, fully interactive browser game built for a seamless user experience.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span
+                                class="px-3 py-1 text-[10px] tracking-widest font-semibold border border-[#542b2b] rounded-full">HTML</span>
+                            <span
+                                class="px-3 py-1 text-[10px] tracking-widest font-semibold border border-[#542b2b] rounded-full">CSS</span>
+                            <span
+                                class="px-3 py-1 text-[10px] tracking-widest font-semibold border border-[#542b2b] rounded-full">JS</span>
+                        </div>
+
+                        <div class="mt-auto flex gap-3">
+                            <a href="#"
+                                class="flex-1 text-center px-4 py-2 rounded-xl bg-red-700 text-sm font-semibold hover:bg-red-800 transition">
+                                Live Demo
+                            </a>
+                            <a href="#"
+                                class="flex-1 text-center px-4 py-2 rounded-xl border border-[#542b2b] text-sm font-semibold hover:border-red-700 transition">
+                                <i class="fa-brands fa-github mr-1"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="group flex flex-col bg-black/20 border border-[#542b2b] rounded-2xl overflow-hidden
+                    transition-all duration-300 hover:-translate-y-1.5 hover:border-red-700
+                    hover:bg-black/40 hover:shadow-lg hover:shadow-red-900/30">
+                    <div class="overflow-hidden border-b border-[#542b2b]">
+                        <img src="./images/rockpaperscissor.jpeg" alt="Rock, Paper, Scissors game"
+                            class="size-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    </div>
+                    <div class="flex flex-col flex-1 p-5">
+                        <h2 class="text-lg font-bold mb-2">Rock, Paper, Scissors</h2>
+                        <p class="text-sm text-gray-400 mb-4">
+                            A sleek, fully interactive browser game built for a seamless user experience.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span
+                                class="px-3 py-1 text-[10px] tracking-widest font-semibold border border-[#542b2b] rounded-full">HTML</span>
+                            <span
+                                class="px-3 py-1 text-[10px] tracking-widest font-semibold border border-[#542b2b] rounded-full">CSS</span>
+                            <span
+                                class="px-3 py-1 text-[10px] tracking-widest font-semibold border border-[#542b2b] rounded-full">JS</span>
+                        </div>
+
+                        <div class="mt-auto flex gap-3">
+                            <a href="#"
+                                class="flex-1 text-center px-4 py-2 rounded-xl bg-red-700 text-sm font-semibold hover:bg-red-800 transition">
+                                Live Demo
+                            </a>
+                            <a href="#"
+                                class="flex-1 text-center px-4 py-2 rounded-xl border border-[#542b2b] text-sm font-semibold hover:border-red-700 transition">
+                                <i class="fa-brands fa-github mr-1"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="group flex flex-col bg-black/20 border border-[#542b2b] rounded-2xl overflow-hidden
+                    transition-all duration-300 hover:-translate-y-1.5 hover:border-red-700
+                    hover:bg-black/40 hover:shadow-lg hover:shadow-red-900/30">
+                    <div class="overflow-hidden border-b border-[#542b2b]">
+                        <img src="./images/rockpaperscissor.jpeg" alt="Rock, Paper, Scissors game"
+                            class="size-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    </div>
+                    <div class="flex flex-col flex-1 p-5">
+                        <h2 class="text-lg font-bold mb-2">Rock, Paper, Scissors</h2>
+                        <p class="text-sm text-gray-400 mb-4">
+                            A sleek, fully interactive browser game built for a seamless user experience.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span
+                                class="px-3 py-1 text-[10px] tracking-widest font-semibold border border-[#542b2b] rounded-full">HTML</span>
+                            <span
+                                class="px-3 py-1 text-[10px] tracking-widest font-semibold border border-[#542b2b] rounded-full">CSS</span>
+                            <span
+                                class="px-3 py-1 text-[10px] tracking-widest font-semibold border border-[#542b2b] rounded-full">JS</span>
+                        </div>
+
+                        <div class="mt-auto flex gap-3">
+                            <a href="#"
+                                class="flex-1 text-center px-4 py-2 rounded-xl bg-red-700 text-sm font-semibold hover:bg-red-800 transition">
+                                Live Demo
+                            </a>
+                            <a href="#"
+                                class="flex-1 text-center px-4 py-2 rounded-xl border border-[#542b2b] text-sm font-semibold hover:border-red-700 transition">
+                                <i class="fa-brands fa-github mr-1"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="group flex flex-col bg-black/20 border border-[#542b2b] rounded-2xl overflow-hidden
+                    transition-all duration-300 hover:-translate-y-1.5 hover:border-red-700
+                    hover:bg-black/40 hover:shadow-lg hover:shadow-red-900/30">
+                    <div class="overflow-hidden border-b border-[#542b2b]">
+                        <img src="./images/rockpaperscissor.jpeg" alt="Rock, Paper, Scissors game"
+                            class="size-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    </div>
+                    <div class="flex flex-col flex-1 p-5">
+                        <h2 class="text-lg font-bold mb-2">Rock, Paper, Scissors</h2>
+                        <p class="text-sm text-gray-400 mb-4">
+                            A sleek, fully interactive browser game built for a seamless user experience.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span
+                                class="px-3 py-1 text-[10px] tracking-widest font-semibold border border-[#542b2b] rounded-full">HTML</span>
+                            <span
+                                class="px-3 py-1 text-[10px] tracking-widest font-semibold border border-[#542b2b] rounded-full">CSS</span>
+                            <span
+                                class="px-3 py-1 text-[10px] tracking-widest font-semibold border border-[#542b2b] rounded-full">JS</span>
+                        </div>
+
+                        <div class="mt-auto flex gap-3">
+                            <a href="#"
+                                class="flex-1 text-center px-4 py-2 rounded-xl bg-red-700 text-sm font-semibold hover:bg-red-800 transition">
+                                Live Demo
+                            </a>
+                            <a href="#"
+                                class="flex-1 text-center px-4 py-2 rounded-xl border border-[#542b2b] text-sm font-semibold hover:border-red-700 transition">
+                                <i class="fa-brands fa-github mr-1"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- How I Work -->
+        <section class="mx-6 md:mx-24 lg:mx-36 py-16 border-t border-[#542b2b] scroll-mt-20">
+            <!-- Heading -->
+            <div class="mb-10 flex flex-col items-center">
+                <p class="text-xs tracking-[0.3em] text-red-700 font-mono mb-2">// PROCESS</p>
+                <h1 class="text-4xl font-bold">HOW I WORK</h1>
+                <div class="my-4 h-1 w-24 rounded-full bg-red-700"></div>
+                <p class="text-center text-lg">A proven, structured approach that ensures every <br> project delivers
+                    maximum value.</p>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-8">
+                <div class="flex flex-col gap-4 bg-black/20 border border-[#542b2b] rounded-2xl p-6
+                transition-all duration-300 hover:-translate-y-1.5
+                hover:border-red-700 hover:bg-black/40 hover:shadow-lg hover:shadow-red-900/30">
+                    <div class="flex justify-between">
+                        <span class="size-10 flex items-center justify-center bg-red-700/20 rounded-lg">
+                            <i class="fa-solid fa-pen-nib text-lg text-red-400"></i>
+                        </span>
+                        <h1 class="text-2xl font-extrabold text-white/40">01</h1>
+                    </div>
+                    <h1 class="text-lg font-bold">Discovery & Strategy</h1>
+                    <p class="text-gray-400">Understanding your goals, audience, and requirements to craft a tailored
+                        roadmap for success.</p>
+                </div>
+                <div class="flex flex-col gap-4 bg-black/20 border border-[#542b2b] rounded-2xl p-6
+                transition-all duration-300 hover:-translate-y-1.5
+                hover:border-red-700 hover:bg-black/40 hover:shadow-lg hover:shadow-red-900/30">
+                    <div class="flex justify-between">
+                        <span class="size-10 flex items-center justify-center bg-red-700/20 rounded-lg">
+                            <i class="fa-solid fa-code text-lg text-red-400"></i>
+                        </span>
+                        <h1 class="text-2xl font-extrabold text-white/40">02</h1>
+                    </div>
+                    <h1 class="text-lg font-bold">Development & Architecture</h1>
+                    <p class="text-gray-400">Building scalable applications with modern technologies, writing clean maintainable code and implementing best practices.</p>
+                </div>
+                <div class="flex flex-col gap-4 bg-black/20 border border-[#542b2b] rounded-2xl p-6
+                transition-all duration-300 hover:-translate-y-1.5
+                hover:border-red-700 hover:bg-black/40 hover:shadow-lg hover:shadow-red-900/30">
+                    <div class="flex justify-between">
+                        <span class="size-10 flex items-center justify-center bg-red-700/20 rounded-lg">
+                            <i class="fa-regular fa-circle-check text-lg text-red-400"></i>
+                        </span>
+                        <h1 class="text-2xl font-extrabold text-white/40">03</h1>
+                    </div>
+                    <h1 class="text-lg font-bold">Testing & Quality Assurance</h1>
+                    <p class="text-gray-400">Rigorous testing across multiple scenarios to ensure reliability, performance, and bug-free functionality.</p>
+                </div>
+                <div class="flex flex-col gap-4 bg-black/20 border border-[#542b2b] rounded-2xl p-6
+                transition-all duration-300 hover:-translate-y-1.5
+                hover:border-red-700 hover:bg-black/40 hover:shadow-lg hover:shadow-red-900/30">
+                    <div class="flex justify-between">
+                        <span class="size-10 flex items-center justify-center bg-red-700/20 rounded-lg">
+                            <i class="fa-solid fa-tower-broadcast text-lg text-red-400"></i>
+                        </span>
+                        <h1 class="text-2xl font-extrabold text-white/40">04</h1>
+                    </div>
+                    <h1 class="text-lg font-bold">Launch & Support</h1>
+                    <p class="text-gray-400">Seamless deployment, performance optimization, and ongoing support to ensure lasting impact.</p>
+                </div>
+            </div>
+        </section>
+
 
         <!-- Footer -->
-
         <footer class="px-4 sm:px-8 md:px-20 lg:px-20 xl:px-30 mt-10 cream">
             <div
                 class="px-6 sm:px-8 md:px-10 lg:px-14 py-8 sm:py-10 mb-8 sm:mb-12 border border-[#542b2b] bg-[#4a1616]/50 backdrop-blur-md rounded-[30px] sm:rounded-[40px] flex flex-col lg:flex-row justify-between gap-8 lg:gap-0">

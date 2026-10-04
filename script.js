@@ -1,3 +1,19 @@
+// setTimeout(() => {
+//     const loader = document.querySelector(".main-loader")
+//     const website = document.querySelector("#site")
+//     loader.style.display = "none"
+//     website.style.display = "block"
+// }, 2000)
+
+// let loadCount = 0
+// setInterval(() => {
+//     if(loadCount < 100){
+//         loadCount++
+//     }
+//     document.querySelector("#loadCount").innerHTML = `${loadCount}%`
+// }, 2000/120)
+
+
 
 const btn = document.getElementById('menu-btn');
 const menu = document.getElementById('mobile-menu');
@@ -263,3 +279,4 @@ groups.forEach((g, gi) => {
     );
 
 });
+
